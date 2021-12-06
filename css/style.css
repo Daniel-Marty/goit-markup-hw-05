@@ -14,6 +14,7 @@
   --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
   --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   --box-shadow-long: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --box-shadow-pf-card:0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   --transition-time: 250ms; 
   "printWidth": 100,
   "tabWidth": 2,
@@ -508,7 +509,7 @@ text-transform: uppercase;
   justify-content: center;
   color: var(--icon-fill-main);
   border: 1px solid var(--icon-fill-main);
-  transition: color var(--transition-time) var(--cubic-bezier), border var(--transition-time) var(--cubic-bezier);
+  transition: color var(--transition-time) var(--cubic-bezier), border-color var(--transition-time) var(--cubic-bezier);
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -645,7 +646,7 @@ text-transform: uppercase;
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
-box-shadow: var(--box-shadow-long);
+box-shadow: var(--box-shadow-pf-card)
 }
 
 .portfolio-title {
@@ -679,7 +680,7 @@ box-shadow: var(--box-shadow-long);
   transition: transform var(--transition-time) var(--cubic-bezier);
   overflow: auto;
 }
-.flex-item:hover .overlay {
+.portfolio-link:hover .overlay {
   transform: translateY(-100%);  
 }
 .flex-container {
