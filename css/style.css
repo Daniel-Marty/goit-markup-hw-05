@@ -429,9 +429,6 @@ text-transform: uppercase;
 .team {
   display: flex;
 }
-.img {
-  display: inline-block;
-}
 .team-item {
   margin-right: 30px;
   width: calc(100% / 4);
@@ -616,7 +613,7 @@ text-transform: uppercase;
 .border-main {
   padding: 30px 32px;
   background-color: var(--background-color);
-  border-radius: 6px;
+  border-radius: 0 0 6px 6px;
   box-shadow: var(--box-shadow-long)
 }
 .border-portfolio {
@@ -681,6 +678,9 @@ box-shadow: var(--box-shadow-pf-card)
   overflow: auto;
 }
 .portfolio-link:hover .overlay {
+  transform: translateY(-100%);  
+}
+.portfolio-link:focus .overlay {
   transform: translateY(-100%);  
 }
 .flex-container {
